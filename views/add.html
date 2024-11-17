@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <a class="logo_link" href="index.html">
+            <img id="logo" src="images/thumbnail.png" alt="logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="main-dishes.html">Main Dishes</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="tools.html">Tools</a>
+            <a id="add" href="add.html">+</a>
+        </nav>
+    </header>
+    <!-- The following code was based off of content generated from ChatGPT to help me learn how to integrate firebase -->
+    <div class="container">
+        <h1>Add a New Recipe</h1>
+    
+        <form id="recipeForm">
+          <label for="name">Recipe Name</label>
+          <input type="text" id="name" required>
+    
+          <label>Ingredients</label>
+          <div id="ingredients">
+            <input type="text" placeholder="Ingredient 1" required>
+          </div>
+          <button type="button" id="addIngredient">+ Add Ingredient</button>
+    
+          <label for="directions">Directions</label>
+          <div id="directions">
+            <textarea placeholder="Step 1" required></textarea>
+          </div>
+          <button type="button" id="addDirection">+ Add Step</button>
+    
+          <!-- <label for="image">Upload Image</label>
+          <input type="file" id="image"> -->
+    
+          <button type="submit">Submit Recipe</button>
+        </form>
+      </div>
+    <!-- End -->
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-storage-compat.js"></script>
+    <script src="./scripts/add-recipe.js"></script>
+
+</body>
+</html>
