@@ -38,6 +38,9 @@ body {
   justify-content: center;
   box-sizing: border-box 
 }
+#add:hover {
+  background-color: #856c54;
+}
 nav{
   display: flex;
   justify-content: space-around;
@@ -94,7 +97,7 @@ form {
   flex-direction: column;
 }
 
-input, textarea, button {
+#name, .ingredients, textarea, #addIngredient, #addDirection, #submitNewRecipe {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #2B2625;
@@ -346,6 +349,10 @@ footer #social {
   color: #2B2625;
   background-color: #955f5f;
   border: #2B2625 2px solid;
+}
+
+#submit_form:hover {
+  background-color: #7E2A2A;
 }
 
 .tips {

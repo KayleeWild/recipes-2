@@ -29,7 +29,7 @@
     
           <label>Ingredients</label>
           <div id="ingredients">
-            <input type="text" placeholder="Ingredient 1" required>
+            <input type="text" class="ingredients" placeholder="Ingredient 1" required>
           </div>
           <button type="button" id="addIngredient">+ Add Ingredient</button>
     
@@ -42,7 +42,7 @@
           <!-- <label for="image">Upload Image</label>
           <input type="file" id="image"> -->
     
-          <button type="submit">Submit Recipe</button>
+          <button id="submitNewRecipe" type="submit">Submit Recipe</button>
         </form>
       </div>
     <!-- End -->
@@ -50,6 +50,7 @@
     <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-storage-compat.js"></script>
     <script src="./scripts/add-recipe.js"></script>
+    <script src="scripts/firebaseConfig.js"></script>
 
 </body>
 </html>
