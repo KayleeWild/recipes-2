@@ -14,16 +14,36 @@ Fonts:
 
 
 /* Header and Hero Stuff */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+main {
+  flex: 1;
+  flex-grow: 1;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin-top: auto;
+  box-sizing: border-box;
+}
 body {
+  display: flex;
+  flex-direction: column;
   max-width: 2000px;
   margin: 0 auto;
-  padding: 4em;
+  padding: 0 4em;
   font-size: 18px;
   text-align: center;
   background-color: #2B2625;
   font-family: 'Noto Sans', sans-serif;
   color: #2B2625;
 }
+
 #add {
   font-size: 64px;
   background-color: #9B8167;
@@ -67,7 +87,7 @@ header{
   background-color: #7E2A2A;
   display: grid;
   grid-template-columns: 150px auto;
-  margin-top: -72px;
+  /* margin-top: -72px; */
 }
 
 header img{
@@ -126,6 +146,7 @@ textarea {
   resize: vertical;
   min-height: 100px;
 }
+
 
 /* Main Stuff */
 main img{
@@ -332,7 +353,7 @@ footer #social {
   width: fit-content;
 }
 
-#search {
+#search, #searchBar {
   width: 60%;
   padding: 1rem;
   margin: 2rem 1rem;
@@ -340,9 +361,10 @@ footer #social {
   font-family: 'Fira Sans', sans-serif;
   background-color: #C7C0B0;
   font-size: 1.5rem;
+  outline: none;
 }
 
-#submit_form {
+#submit_form, #searchBtn {
   margin: 2rem 1rem 1rem;
   padding: 1rem;
   font-size: 1.5rem;
@@ -351,8 +373,8 @@ footer #social {
   border: #2B2625 2px solid;
 }
 
-#submit_form:hover {
-  background-color: #7E2A2A;
+#submit_form:hover, #searchBtn:hover {
+  background-color: #8f3e3e;
 }
 
 .tips {
@@ -511,7 +533,7 @@ footer #social {
   border-radius: .5em;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1375px) {
   #hero, .home-grid {
       display: block;
       height: auto;
@@ -523,7 +545,7 @@ footer #social {
   nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
   nav a {
     display: block;
@@ -535,16 +557,16 @@ footer #social {
   }
   #add{
     grid-column: 2/3;
-    grid-row: 1/5;
+    grid-row: 1/6;
     text-align: center;
     /* padding: 10% auto; */
     border: #2B2625 solid 3px;
-    margin: 10px auto;
+    margin: 0 auto;
   }
   body {
-      width: 100%;
-      margin: 0 auto;
-      padding: 4em 0em;
+    width: 100%;
+    margin: 0 auto;
+    padding:  0em;
   }
   #child-hero h1{
     font-size: 2rem;

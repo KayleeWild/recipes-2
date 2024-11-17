@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartment 6 Recipes | Tools</title>
+    <title>Apartment 6 Recipes | Main Dishes</title>
     <link rel="icon" type="image/x-icon" href="images/thumbnail.png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body id="tools">
+<body id="main-dishes">
     <header>
         <a class="logo_link" href="index.html">
             <img id="logo" src="images/thumbnail.png" alt="logo">
@@ -21,27 +21,17 @@
             <a id="add" href="add.html">+</a>
         </nav>
     </header>
+    <div id="child-hero">  
+        <h1>All Recipes</h1>
+    </div>
     <main>
-        <div id="tools-grid">
-            <div id="tool-chest">
-                <img src="images/tool_box.png" alt="Tool box">
-                <h1>Tools</h1>
-            </div>
-            <div class="graphics">
-                <img src="images/conversions.png" alt="Conversion Chart">
-            </div>
-            <div class="tools-text">
-                <h2>Conversion Chart</h2>
-                <p>A helpful chart to convert as you cook.</p>
-            </div>
-            <div class="graphics">
-                <img src="images/knife_grips.png" alt="Knife Grip Chart">
-            </div>
-            <div class="tools-text">
-                <h2>Knife-Grip Diagram</h2>
-                <p>	Not everyone was born knowing how to hold a knife. What’s common-sense for Lyle is life-saving information for Ashlyn. We included this diagram of how to safely hold a kitchen knife for all the Ashlyns out there.</p>
-            </div>
+    <!-- The following code was based off of content generated from ChatGPT to help me learn how to integrate firebase -->
+        <div class="search-box">
+            <input type="text" id="searchBar" placeholder="Search for recipes..." autocomplete="off"/>
+            <button type="button" id="searchBtn">Search</button>
         </div>
+        <div id="searchResults"></div>
+        <!-- End -->
     </main>
     <footer>
         <a class="logo_link" href="index.html">
@@ -55,5 +45,9 @@
         <a href="site-plan.html">Site Plan</a>
         <img id="social" src="images/blue_social.png" alt="social media">
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"></script>
+    <script type="module" src="scripts/firebaseConfig.js"></script>
+    <script type="module" src="scripts/search.js"></script>
 </body>
 </html>

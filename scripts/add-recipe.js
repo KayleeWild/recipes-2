@@ -1,6 +1,8 @@
 // This whole file was based off of code generated from ChaGPT to help me start a 
 // firestore database for the first time. 
 
+import { db } from './firebaseConfig.js';
+
 // Elements from the form
 const recipeForm = document.getElementById('recipeForm');
 const nameInput = document.getElementById('name');

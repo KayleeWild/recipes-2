@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BETA - Apartment 6 Recipes | Add</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -16,11 +16,13 @@
             <a href="main-dishes.html">Main Dishes</a>
             <a href="desserts.html">Desserts</a>
             <a href="tools.html">Tools</a>
+            <a href="search-all.html">Search</a>
             <a id="add" href="add.html">+</a>
         </nav>
     </header>
     <!-- The following code was based off of content generated from ChatGPT to help me learn how to integrate firebase -->
-    <div class="container">
+    <main>
+      <div class="container">
         <h1>Add a New Recipe</h1>
     
         <form id="recipeForm">
@@ -45,12 +47,25 @@
           <button id="submitNewRecipe" type="submit">Submit Recipe</button>
         </form>
       </div>
+    </main>
+    <footer>
+      <a class="logo_link" href="index.html">
+          <img src="images/logo.png" alt="logo">
+      </a>
+      <p>&copy; 2023</p>
+      <a href="index.html">Home</a>
+      <a href="main-dishes.html">Main Dishes</a>
+      <a href="desserts.html">Desserts</a>
+      <a href="tools.html">Tools</a>
+      <a href="site-plan.html">Site Plan</a>
+      <img id="social" src="images/blue_social.png" alt="social media">
+    </footer>
     <!-- End -->
     <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-storage-compat.js"></script>
-    <script src="./scripts/add-recipe.js"></script>
-    <script src="scripts/firebaseConfig.js"></script>
+    <script type="module" src="./scripts/add-recipe.js"></script>
+    <script type="module" src="scripts/firebaseConfig.js"></script>
 
 </body>
 </html>
